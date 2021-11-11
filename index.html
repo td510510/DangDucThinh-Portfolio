@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Duc Thinh &dash; Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a class="main-nav-link" href="#about">About me</a></li>
+                    <li><a class="main-nav-link" href="#skill">Skill</a></li>
+                    <li><a class="main-nav-link" href="#projects">Mini Projects</a></li>
+                    <li><a class="main-nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <video playsinline autoplay muted loop poster="img/binary.JPG" id="bgvid">
+            <source src="video/binary.mp4" type="video/mp4">
+        </video>
+        <div class="hero">
+            <div class="text">
+                <h2 class="heading-secondary">Hello</h2>
+                <h1 class="heading-primary">I'm Dang Duc Thinh</h1>
+            </div>
+            <div class="arrow-down">&dArr;</div>
+        </div>
+    </header>
+    <main class="container">
+        <!-- <section class="hero">
+            <div class="text">
+                <h2 class="heading-secondary">Hello</h2>
+                <h1 class="heading-primary">I'm Dang Duc Thinh</h1>
+            </div>
+            <div class="arrow-down">&dArr;</div>
+        </section> -->
+        <section id="about">
+            <h3 class="heading-tertiary">About me</h3>
+            <div class="about-box">
+                <img src="img/thinh.jpg" alt="This is me" class="img-me">
+                <div class="about-box-text">
+                    <p class="about-text">I want to be a front-end web developer. A good user experience when they use
+                        that is my ultimate goal. I try to learn every day and am always open to new knowledge.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skill">
+            <h3 class="heading-tertiary">My skill</h3>
+            <div class="skill-box">
+                <div class="skill-box__tag"><span>HTML</span></div>
+                <div class="skill-box__tag"><span>CSS</span></div>
+                <div class="skill-box__tag"><span>JavaScript</span></div>
+                <div class="skill-box__tag"><span>Sass</span></div>
+            </div>
+        </section>
+        <section id="projects">
+            <h3 class="heading-tertiary">Mini projects</h3>
+            <div class="project-container">
+                <div class="project">
+                    <img src="img/project1.JPG" alt="This is project 1" class="img-project">
+                    <div class="project__choose">
+                        <a class="project__demo link" href="https://td510510.github.io/Omnifood1/" target="_blank">Show
+                            demo</a>
+                        <a class="project__source-code link" href="https://github.com/td510510/Omnifood1"
+                            target="_blank">Source code</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project2.JPG" alt="This is project 2" class="img-project">
+                    <div class="project__choose">
+                        <a class="project__demo link" href="https://td510510.github.io/Guess-My-Number/"
+                            target="_blank">Show
+                            demo</a>
+                        <a class="project__source-code link" href="https://github.com/td510510/Guess-My-Number"
+                            target="_blank">Source code</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project3.JPG" alt="This is project 3" class="img-project">
+                    <div class="project__choose">
+                        <a class="project__demo link" href="https://td510510.github.io/DOM-Banklist/"
+                            target="_blank">Show
+                            demo</a>
+                        <a class="project__source-code link" href="https://github.com/td510510/DOM-Banklist"
+                            target="_blank">Source code</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project4.JPG" alt="This is project 4" class="img-project">
+                    <div class="project__choose">
+                        <a class="project__demo link" href="https://td510510.github.io/Choose-A-Asia-Country/"
+                            target="_blank">Show
+                            demo</a>
+                        <a class="project__source-code link" href="https://github.com/td510510/Choose-A-Asia-Country"
+                            target="_blank">Source code</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="contact">
+            <h3 class="heading-tertiary">Contact</h3>
+            <ul class="contact-box">
+                <li><a class="contact-link link" href="mailto:dangducthinhdang@gmail.com">
+                        <span>Email&#58;</span>
+                        <span>dangducthinhdang@gmail.com</span>
+                    </a></li>
+                <li><a class="contact-link link" href="https://fb.com/thinh.dang.315/" target="_blank">
+                        <span>facebook&#58;</span>
+                        <span>fb.com/thinh.dang.315/</span>
+                    </a></li>
+                <li><a class="contact-link link" href="#">
+                        <span>Phone number&#58;</span>
+                        <span>0969 949 919</span>
+                    </a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
