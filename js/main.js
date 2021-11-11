@@ -78,3 +78,12 @@ projects.forEach((p) => {
     projectLeave(e, p);
   });
 });
+
+// Navigation;
+navLinks.forEach((nav) => {
+  nav.addEventListener("click", function (e) {
+    e.preventDefault();
+    let id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  });
+});
