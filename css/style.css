@@ -82,8 +82,9 @@ video {
 /* MAIN  */
 section {
   /* padding: 6rem 0; */
-  padding: 15rem 3rem;
-  border-top: 1px solid #ddd;
+  /* padding: 15rem 3rem; */
+  padding-bottom: 9rem;
+  border-top: 1px solid #cf711f;
 
   transition: transform 1s, opacity 1s;
 }
@@ -125,20 +126,29 @@ section {
 .skill-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 30rem;
   align-items: center;
   justify-content: center;
+  padding-top: 4rem;
+  row-gap: 2rem;
+  padding-bottom: 0;
 }
 
 .skill-box__tag {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  height: 80%;
-  border-radius: 50%;
+
+  width: 10ch;
+  height: 10ch;
+  border-radius: 20%;
   background: hsla(28, 80%, 52%, 0.651);
   animation: skillEffect 2s 2s infinite ease forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes skillEffect {
@@ -161,6 +171,14 @@ section {
 
 .project {
   position: relative;
+  border-radius: 5% 0;
+  overflow: hidden;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.project:hover {
+  box-shadow: 3px 3px red, -1em 0 0.4em olive;
 }
 
 .project__choose {
@@ -194,6 +212,22 @@ section {
   transform: translateX(-1000%);
 }
 
+.mini-project {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.personal-project .project-container {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.personal-project .project {
+  width: 60%;
+}
+
 /* Contact */
 .contact-box {
   display: flex;
@@ -209,4 +243,41 @@ section {
 
 .contact-link span {
   display: inline-block;
+}
+
+/* Title */
+.title {
+  margin-bottom: 3rem;
+}
+
+.line {
+  height: 9rem;
+  width: 0.2rem;
+  background-color: #cf711f;
+  margin: 0 auto;
+}
+
+.heading-tertiary {
+  border-radius: 50%;
+  background-color: #e67e22;
+  width: 10ch;
+  height: 10ch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  animation: sunEffect 1s 0.3s infinite ease forwards;
+  /* color: #fff;
+  box-shadow: 0px -1px 27px 25px hsl(28deg 84% 50% / 66%); */
+}
+
+@keyframes sunEffect {
+  from {
+    color: #000;
+    box-shadow: none;
+  }
+  to {
+    color: #fff;
+    box-shadow: 0px -1px 27px 25px hsl(28deg 84% 50% / 66%);
+  }
 }
